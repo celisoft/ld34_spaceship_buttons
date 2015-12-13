@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Spaceship buttons</title>
+
+    	<!-- Usage of http://fontawesome.io/icons/ to provide platform icons -->
+	    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+
+		<!-- Phaser framework  -->
+		<script src="js/phaser.min.js"></script>
+
+		<!-- Phaser view-->
+		<script src="js/phaser_screen.js"></script>
+
+		<!-- AI output update -->
+		<script src='js/matrix.js'></script>
+
+		<!-- Scenarii -->
+		<script src='js/scenarii.js' defer></script>
+
+		<link rel="stylesheet" href="stylesheet.css"/>
+	</head>
+	<body>
+		<div id="ss_info">
+			<label for="ss_shield">Spaceship shield status</label>
+			<meter id="ss_shield" max="100" min="0" low="20" value="100">100%</meter>
+			<br />
+			<label for="ss_damages">Spaceship damages</label>
+			<meter id="ss_damages" max="100" min="0" high="80" value="0">0%</meter>
+			<br />
+			<label for="ss_oxygen">Spaceship oxygen level</label>
+			<meter id="ss_oxygen" max="100" min="0" low="10" value="95">95%</meter>
+			<br />
+			<label for="ss_power">Spaceship power level</label>
+			<meter id="ss_power" max="100" min="0" low="15" value="88">88%</meter>
+		</div>
+		<div id="ai_display">
+			<textarea id="ai_output" rows="10" cols="20" disabled></textarea>
+		</div>
+		<section>
+			<div id="game"></div>
+		</section>
+		<div id="bt_area">
+			<button id="bt1">1</button>
+			<button id="bt2">2</button>	
+		</div>
+		<div id="command">
+			<textarea id="cmd_output" rows="6" cols="60" disabled></textarea>
+		</div>
+		<div id="bt_restart_area">
+			<button onclick="reset_scenario()" id="restart" class="fa fa-refresh fa-lg"></button>
+		</div>
+	</body>
+</html>

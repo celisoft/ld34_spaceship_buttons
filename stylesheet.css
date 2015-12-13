@@ -1,0 +1,114 @@
+body {
+	background-image:url("assets/background.jpeg");
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-color: gray;
+	margin: auto;
+}
+
+#game {
+	width: 600px;	
+	height: 300px;
+	background-color: black;
+	margin: auto;
+	padding: 15px;
+	background-image: url("assets/border.jpeg");
+	border-radius: 30px;	
+}
+
+#ai_display {
+	float: right;
+	position: relative;
+	background-image: url("assets/border.jpeg");
+	margin-top: 130px;
+	margin-right: 20px;
+	width: 300px;
+	height: 200px;
+	border-radius: 30px;
+}
+
+#ai_display textarea {
+	background-color: black;
+	color: lime;
+	padding: 5px;
+	resize: none;
+	border: 1px solid black;
+	width: 230px;
+	height: 160px;
+	margin-top: 10px;
+	margin-left: 30px;
+}
+
+#ss_info {
+	float: left;
+	position: relative;
+	background-image: url("assets/border.jpeg");
+	margin-top: 130px;
+	margin-left: 50px;
+	width: 230px;
+	height: 200px;
+	border-radius: 30px;
+}
+
+#ss_info label {
+	color: white;
+	margin-left: 15px;
+	white-space: nowrap;
+}
+
+#ss_info meter {
+	margin-top: 5px;
+	margin-bottom: 10px;	
+	margin-left: 15px;
+}
+
+#command {
+	margin: 15px auto;
+	background-image: url("assets/border.jpeg");
+	width: 590px;
+	padding: 10px;
+}
+
+#command textarea {
+	background-color: black;
+	color: lime;
+	padding: 5px;
+	resize: none;
+	border: 1px solid black;
+	width: 580px;
+	height: 100px;
+}
+
+#bt_area {
+	text-align: center;
+}
+
+#bt_restart_area {
+	text-align: center;
+}
+
+
+
+#bt_area button {
+	margin-right: 100px;
+	margin-left: 100px;
+	background-image: url("assets/button.jpeg");
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	color: white;
+	font-family: Impact;
+}
+
+#bt_restart_area button {
+	margin-right: 100px;
+	margin-left: 100px;
+	background-image: url("assets/button.jpeg");
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	color: white;
+}
+button:hover {
+	box-shadow: 5px 5px 5px #3a79d6;
+}

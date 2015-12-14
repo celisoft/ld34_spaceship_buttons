@@ -114,7 +114,7 @@ function move_to_scenario()
 			current_ai_msg = "Welcome to Earth 2.0.";
 			type_matrix("ai_output", current_ai_msg);
 
-			setTimeout(function(){type_matrix('cmd_output', final_msg);}, 10000);
+			setTimeout(function(){type_matrix('cmd_output', final_msg);}, 5000);
 			
 			dom_bt1.onclick = function(){};
 			dom_bt2.onclick = function(){};

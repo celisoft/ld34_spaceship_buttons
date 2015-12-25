@@ -9,6 +9,7 @@ var final_msg = "Thanks for playing this game!\nYou can play other games on www.
 function move_to_scenario()
 {
 	var dom_ss_shield = document.getElementById('ss_shield');	
+	console.log(dom_ss_shield);
 	var dom_ss_damages = document.getElementById('ss_damages');
 	var dom_ss_oxygen = document.getElementById('ss_oxygen');
 	var dom_ss_power = document.getElementById('ss_power');
@@ -163,5 +164,7 @@ function reset_scenario()
 	move_to_scenario();
 }
 
-//Startup first scenario
-move_to_scenario();
+//Startup first scenario only once everything is loaded
+window.onload = function() {
+	move_to_scenario();
+};

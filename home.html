@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Spaceship buttons</title>
+
+    	<!-- Usage of http://fontawesome.io/icons/ to provide platform icons -->
+	    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+
+		<!-- Responsive -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Phaser framework  -->
+		<script src="js/phaser.min.js"></script>
+
+		<!-- Phaser view-->
+		<script src="js/phaser_screen.js"></script>
+
+		<!-- AI output update -->
+		<script src='js/matrix.js'></script>
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Scenarii -->
+		<script src='js/scenarii.js'></script>
+
+		<link rel="stylesheet" href="stylesheet.css"/>
+	</head>
+	<body>
+
+		<!-- Status -->
+		<div id="ss_info">
+
+			<!-- Shield -->
+			<img alt="shield_img"
+				 src="assets/shield.png"
+				 title="Shield">
+			<meter id="ss_shield"
+				   low="20"
+				   max="100"
+				   min="0"
+				   value="100">
+				100%
+			</meter>
+			<br />
+
+			<!-- Damages -->
+			<img alt="damages_img"
+				 src="assets/damages.png"
+				 title="Damages"/>
+			<meter id="ss_damages"
+				   max="100"
+				   min="0"
+				   high="80"
+				   value="0">
+				0%
+			</meter>
+			<br />
+
+			<!-- Oxygen -->
+			<img alt="oxygen_img"
+				 src="assets/oxygen.png"
+				 title="Oxygen"/>
+			<meter id="ss_oxygen"
+				   max="100"
+				   min="0"
+				   low="10"
+				   value="95">
+				95%
+			</meter>
+			<br />
+
+			<!-- Power -->
+			<img alt=electricity_img
+				 src="assets/electricity.png"
+				 title="Power"/>
+			<meter id="ss_power"
+				   max="100"
+				   min="0"
+				   low="15"
+				   value="88">
+				88%
+			</meter>
+		</div>
+
+
+
+		<!-- AI Display -->
+		<div id="ai_display">
+			<textarea id="ai_output" rows="6" cols="35" disabled></textarea>
+		</div>
+
+
+		<!-- Game -->
+		<div id="game_container">
+		<section>
+			<div id="game"></div>
+		</section>
+		</div>
+
+		<!-- Buttons area  -->
+		<div id="bt_area" class="w-50 mx-auto">
+			<button id="bt1">1</button>
+			<button id="bt2">2</button>	
+		</div>
+
+		<!-- Output Choice -->
+		<div id="command" class="w-50 mx-auto">
+			<textarea id="cmd_output" rows="6" cols="60" disabled></textarea>
+		</div>
+
+		<!-- Restart -->
+		<div id="bt_restart_area" class="w-50 mx-auto">
+			<button onclick="reset_scenario()" id="restart" class="fa fa-refresh fa-lg"></button>
+		</div>	
+</body>
+</html>
